@@ -60,9 +60,9 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.ViewHolder
 
         void bind(Movie movie) {
             tvTitle.setText(movie.getTitle());
-            tvTitle.setText(movie.getOverview());
+            tvOverview.setText(movie.getOverview());
             Glide.with(context).load(("https://image.tmdb.org/t/p/w342" + movie.getPosterPath())).into(ivPoster);
-            Log.d("smile", movie.getPosterPath());
+            Log.d("smile", movie.getTitle());
         }
     }
 

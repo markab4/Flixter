@@ -9,11 +9,11 @@ import java.util.List;
 
 public class Movie {
 
-    String posterPath;
-    String title;
-    String overview;
+    private String posterPath;
+    private String title;
+    private String overview;
 
-    public Movie(JSONObject jsonObject) throws JSONException {
+    private Movie(JSONObject jsonObject) throws JSONException {
         posterPath = jsonObject.getString("poster_path");
         title = jsonObject.getString("title");
         overview = jsonObject.getString("overview");
