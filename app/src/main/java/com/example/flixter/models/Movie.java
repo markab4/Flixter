@@ -16,6 +16,8 @@ public class Movie {
     String overview;
     double voteAverage;
     int movieId;
+    Double popularity;
+    String releaseDate;
 
     // empty constructor needed by the Parceler library
     public Movie() {
@@ -27,6 +29,8 @@ public class Movie {
         overview = jsonObject.getString("overview");
         voteAverage = jsonObject.getDouble("vote_average");
         movieId = jsonObject.getInt("id");
+        popularity = jsonObject.getDouble("popularity");
+        releaseDate = jsonObject.getString("release_date");
     }
 
     public String getPosterPath() {
@@ -55,5 +59,13 @@ public class Movie {
 
     public int getMovieId() {
         return movieId;
+    }
+
+    public String getPopularity() {
+        return popularity.toString();
+    }
+
+    public String getReleaseDate() {
+        return releaseDate;
     }
 }

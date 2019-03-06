@@ -31,6 +31,8 @@ public class DetailActivity extends YouTubeBaseActivity {
     RatingBar ratingBar;
     Movie movie;
     YouTubePlayerView youTubePlayerView;
+    TextView popularity;
+    TextView releaseDate;
 
 
     @Override
@@ -40,12 +42,16 @@ public class DetailActivity extends YouTubeBaseActivity {
         tvTitle = findViewById(R.id.tvTitle);
         tvOverview = findViewById(R.id.tvOverview);
         ratingBar = findViewById(R.id.ratingBar);
+        popularity = findViewById(R.id.tvPopularity);
+        releaseDate = findViewById(R.id.tvReleaseDate);
         movie = Parcels.unwrap(getIntent().getParcelableExtra("movie"));
         youTubePlayerView = findViewById(R.id.player);
 
         tvTitle.setText(movie.getTitle());
         tvOverview.setText(movie.getOverview());
         ratingBar.setRating(movie.getVoteAverage());
+        popularity.setText(String.format("Popularity: %s ", movie.getPopularity()));
+        releaseDate.setText(String.format("Release Date: %s ", movie.getReleaseDate()));
 
         AsyncHttpClient client = new AsyncHttpClient();
         client.get(String.format(TRAILERS_API, movie.getMovieId()), new JsonHttpResponseHandler() {
