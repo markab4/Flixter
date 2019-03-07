@@ -20,6 +20,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_toEndOf="@id/ivPoster"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@android:color/background_light"
         android:textSize="24sp"
         tools:text="A Star Is Born" />
 
@@ -29,5 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/tvTitle"
         android:layout_toEndOf="@id/ivPoster"
+        android:textColor="@android:color/white"
+        android:typeface="sans"
         tools:text="a whole bunch of sample @android:string/paste_as_plain_text" />
 </RelativeLayout>
