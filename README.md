@@ -3,12 +3,12 @@ Flixter is an app that allows users to browse movies from the [The Movie Databas
 
 ### User Stories
 
-#### Required Stories
+#### Must-Have Stories
 - [x] User can view a list of movies (title, poster image, and overview) currently playing in theaters from the Movie Database API.
 - [x] Expose details of movie (ratings using RatingBar, popularity, and synopsis) in a separate activity.
 - [x] Allow video posts to be played in full-screen using the YouTubePlayerView.
 
-#### Stretch Stories
+#### Nice-To-Have Stories
 - [x] Views should be responsive for both landscape/portrait mode.
    - [x] In portrait mode, the poster image, title, and movie overview is shown.
    - [ ] In landscape mode, the rotated alternate layout should use the backdrop image instead and show the title and movie overview to the right of it.
@@ -24,9 +24,9 @@ Flixter is an app that allows users to browse movies from the [The Movie Databas
 
 ### App Walkthough GIFs
 
-<img src="https://github.com/markab4/Flixter/blob/master/app_walkthrough.gif?raw=true" width=250><br>
-<img src="https://github.com/markab4/Flixter/blob/master/app_walkthrough2.gif?raw=true" width=250><br>
-<img src="https://github.com/markab4/Flixter/blob/master/app_walkthrough3.gif?raw=true" width=250><br>
+![](https://github.com/markab4/Flixter/blob/master/app_walkthrough.gif?raw=true)<br>
+![](https://github.com/markab4/Flixter/blob/master/app_walkthrough2.gif?raw=true)<br>
+![](https://github.com/markab4/Flixter/blob/master/app_walkthrough3.gif?raw=true)<br>
 
 ### Open-source libraries used
 
